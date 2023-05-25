@@ -32,19 +32,14 @@ public class LoanInputController {
     @FXML
     protected void onCalculateButtonClick() {
         double payment = 0;
-        double price = 0;
-        double down = 0;
-        double interest = 0;
-        int months = 0;
         int numPayments = 0;
-        String frequency = "";
 
         try {
-            price = Double.parseDouble(priceText.getText());
-            down = Double.parseDouble(downPaymentText.getText());
-            interest = Double.parseDouble(interestRateText.getText()) / 100;    // Convert to decimal
-            months = (int) paymentPeriodSlider.getValue();
-            frequency = paymentFrequencyText.getText();
+            double price = Double.parseDouble(priceText.getText());
+            double down = Double.parseDouble(downPaymentText.getText());
+            double interest = Double.parseDouble(interestRateText.getText()) / 100;    // Convert to decimal
+            int months = (int) paymentPeriodSlider.getValue();
+            String frequency = paymentFrequencyText.getText();
 
             if (frequency.equalsIgnoreCase("weekly")) {
                 numPayments = months * 4;
