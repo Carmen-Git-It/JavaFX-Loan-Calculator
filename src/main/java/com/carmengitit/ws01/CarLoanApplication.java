@@ -1,3 +1,14 @@
+/**********************************************
+ Workshop 1
+ Course: Application Development (APD545) - Semester 5
+ Last Name: Whitton
+ First Name: Carmen
+ ID: 102710217
+ Section: NAA
+ This assignment represents my own work in accordance with Seneca Academic Policy.
+ Signature: Carmen Whitton
+ Date: 2023/05/28
+ **********************************************/
 package com.carmengitit.ws01;
 
 import javafx.application.Application;

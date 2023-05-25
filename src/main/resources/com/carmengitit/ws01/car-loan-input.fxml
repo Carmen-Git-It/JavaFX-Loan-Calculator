@@ -34,7 +34,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField id="typeText" prefWidth="200.0" promptText="Car/ Truck" />
+            <TextField fx:id="typeText" prefWidth="200.0" promptText="Car/ Truck" />
          </children>
          <GridPane.margin>
             <Insets />
@@ -50,7 +50,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField id="ageText" prefWidth="200.0" promptText="New/ Used" />
+            <TextField fx:id="ageText" prefWidth="200.0" promptText="New/ Used" />
          </children>
          <padding>
             <Insets right="100.0" />
@@ -63,7 +63,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField id="priceText" prefWidth="200.0" promptText="\$0.00" />
+            <TextField fx:id="priceText" prefWidth="200.0" promptText="\$0.00" />
          </children>
          <padding>
             <Insets right="100.0" />
@@ -76,7 +76,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField id="downPaymentText" prefWidth="200.0" promptText="\$0.00" />
+            <TextField fx:id="downPaymentText" prefWidth="200.0" promptText="\$0.00" />
          </children>
          <padding>
             <Insets right="100.0" />
@@ -89,7 +89,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField id="interestRateText" prefWidth="200.0" promptText="0.00%" />
+            <TextField fx:id="interestRateText" prefWidth="200.0" promptText="0.00%" />
          </children>
          <padding>
             <Insets right="100.0" />
@@ -97,12 +97,12 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="100.0" GridPane.rowIndex="5">
          <children>
-            <Label text="Loan Payment Period:">
+            <Label fx:id="loanPeriodLabel" text="Loan Payment Period:">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Slider id="paymentPeriodSlider" majorTickUnit="12.0" max="96.0" min="12.0" minorTickCount="0" prefWidth="200.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="48.0" />
+            <Slider fx:id="paymentPeriodSlider" majorTickUnit="12.0" max="96.0" min="12.0" minorTickCount="0" prefWidth="200.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="48.0" />
          </children>
          <padding>
             <Insets right="100.0" />
@@ -115,7 +115,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField id="paymentFrequencyText" prefWidth="200.0" promptText="Weekly/ Bi-Weekly/ Monthly" />
+            <TextField fx:id="paymentFrequencyText" prefWidth="200.0" promptText="Weekly/ Bi-Weekly/ Monthly" />
          </children>
          <padding>
             <Insets right="100.0" />
@@ -126,8 +126,8 @@
             <Insets right="125.0" />
          </padding>
          <children>
-            <Button id="clearBtn" mnemonicParsing="false" onAction="#onClearButtonClick" text="Clear" />
-            <Button id="calculateBtn" defaultButton="true" mnemonicParsing="false" onAction="#onCalculateButtonClick" text="Get Results" />
+            <Button fx:id="clearBtn" mnemonicParsing="false" onAction="#onClearButtonClick" text="Clear" />
+            <Button fx:id="calculateBtn" defaultButton="true" mnemonicParsing="false" onAction="#onCalculateButtonClick" text="Get Results" />
          </children>
       </HBox>
       <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="100.0" GridPane.rowIndex="8">
@@ -137,7 +137,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField id="calculateText" minWidth="200.0" prefWidth="200.0" promptText="\$0.00" />
+            <TextField fx:id="calculateText" editable="false" minWidth="200.0" prefWidth="200.0" promptText="\$0.00" />
          </children>
          <padding>
             <Insets right="100.0" />

@@ -1,5 +1,7 @@
 package com.carmengitit.ws01;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -20,6 +22,8 @@ public class LoanInputController {
     private TextField interestRateText;
     @FXML
     private Slider paymentPeriodSlider;
+    @FXML
+    private Label loanPeriodLabel;
     @FXML
     private TextField paymentFrequencyText;
     @FXML
@@ -85,5 +89,15 @@ public class LoanInputController {
         paymentPeriodSlider.setValue(12);
         paymentFrequencyText.setText("");
         calculateText.setText("");
+        loanPeriodLabel.setText("Loan Payment Period:");
+    }
+
+    public void initialize() {
+        paymentPeriodSlider.valueProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                loanPeriodLabel.setText("Loan Payment Period: " + t1.intValue() + " months");
+            }
+        });
     }
 }
