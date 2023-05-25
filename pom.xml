@@ -58,7 +58,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.carmengitit.ws01/com.carmengitit.ws01.HelloApplication</mainClass>
+              <mainClass>com.carmengitit.ws01/com.carmengitit.ws01.CarLoanApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
